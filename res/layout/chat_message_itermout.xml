@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:padding="10dip">
+    <TextView
+        android:id="@+id/chatout_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_centerHorizontal="true"
+        android:text="09-25 12:00"
+        android:textColor="@color/gray"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/chat_message_outcontainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/chatout_time"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+        
+        <ProgressBar
+                android:id="@+id/progressout_load"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone" />
+         <ImageView
+            android:id="@+id/chatout_location"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/chatto_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/location_default"
+            android:text="beijing"
+            android:visibility="gone" />
+         
+         <ImageView
+            android:id="@+id/chatout_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/chatto_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+         
+          <TextView
+            android:id="@+id/chatout_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatto_bg"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text="豆软亮出去的消息"
+            android:textSize="14sp" />
+
+          <ImageView
+            android:id="@+id/chatout_header"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+        
+    </LinearLayout> 
+
+</RelativeLayout>

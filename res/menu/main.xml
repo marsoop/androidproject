@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/actionbar_search_icon"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/action_search"/>
+ 
+    <item
+        android:id="@+id/action_group_chat"
+        android:icon="@drawable/menu_group_chat_icon"
+        android:title="@string/menu_group_chat"/>
+    <item
+        android:id="@+id/action_add_friend"
+        android:icon="@drawable/menu_add_icon"
+        android:title="@string/menu_addfriend"/>
+    <item
+        android:id="@+id/action_scan"
+        android:icon="@drawable/men_scan_icon"
+        android:title="@string/menu_scan"/>
+    <item
+        android:id="@+id/action_feedback"
+        android:icon="@drawable/menu_feedback_icon"
+        android:title="@string/menu_feedback"/>
+    
+    
+    
+    <item
+        android:id="@+id/item_clear_memory_cache"
+        android:title="@string/menu_item_clear_memory_cache"/>
+    <item
+        android:id="@+id/item_clear_disc_cache"
+        android:title="@string/menu_item_clear_disc_cache"/>
+    <item
+        android:id="@+id/item_pause_on_scroll"
+        android:checkable="true"
+        android:title="@string/menu_item_pause_on_scroll"
+        android:visible="false"/>
+    <item
+        android:id="@+id/item_pause_on_fling"
+        android:checkable="true"
+        android:title="@string/menu_item_pause_on_fling"
+        android:visible="false"/>
+
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_info_bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/user_action_more_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/user_action_more"
+        android:textColor="@color/user_info_text"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/user_actionchat_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/user_info_sentmessage"
+        android:onClick="onChatClick"
+        android:text="@string/user_action_send"
+        android:textColor="@color/user_info_text"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/user_action_chatvideo_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/user_action_chat_video"
+        android:textColor="@color/user_info_text"
+        android:textSize="17sp" />
+
+</LinearLayout>

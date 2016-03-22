@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/sort"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#E0E0E0"
+        android:paddingBottom="5dip"
+        android:paddingLeft="8dip"
+        android:paddingTop="5dip"
+        android:text="@string/address_iterm_sort"
+        android:textColor="#454545" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sort"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="3dip"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/address_iterm_sort_name"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/sort_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/image"
+            android:paddingBottom="10dip"
+            android:paddingTop="8dip"
+            android:text="@string/address_iterm_sort_name"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/to_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:paddingBottom="10dip"
+            android:paddingTop="8dip"
+            android:text="@string/address_iterm_sort_name"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18.0sp"
+            android:visibility="invisible" />
+       
+    </RelativeLayout>
+
+</RelativeLayout>

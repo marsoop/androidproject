@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="apndb" />
+    <version value="7" />
+    <list>
+  		<mapping class="org.androidpn.demoapp.model.Msg"></mapping>
+        <mapping class="org.androidpn.demoapp.model.NotificationHistory"></mapping>
+         <mapping class="org.androidpn.demoapp.model.User"></mapping>
+    </list>
+</litepal>

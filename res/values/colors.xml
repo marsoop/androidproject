@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="address_listview_divider_color">#cccccc</color>
+     
+     <!-- 登录 -->
+     <color name="devide_line">#CBCED2</color>
+     <!-- 用户信息 颜色 -->
+     <color name="user_info_bg">#ebebeb</color>
+     <color name="user_info_text">#ffffff</color>
+     <color name="user_info_sentmessage">#1abc9c</color>
+     
+     <!-- 聊天界面 颜色 -->
+     <color name="gray">#AFAFAF</color>
+     <color name="chat_bg">#EFEFEF</color>
+     <color name="black">#000000</color>
+     <color name="transparent">#00000000</color>
+     
+     <!-- 刷新控件 进度颜色 -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="holo_green_dark">#ff669900</color>
+    <!-- 红色未读 -->
+    <color name="common_red">#FF0000</color>
+     
+     <color name="read_bgcolor">#ffeeeeee</color>
+</resources>

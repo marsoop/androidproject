@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.androidpn.demoapp"
+    android:versionCode="20101028"
+    android:versionName="0.5.0" >
+ <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19"  />
+ 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+    <application
+        android:allowBackup="true"
+        android:name="org.androidpn.demoapp.application.MyApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" 
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".DemoAppActivity"
+            android:label="@string/app_name" >  
+        </activity>
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >  
+        </activity>
+         <activity
+            android:name="org.androidpn.demoapp.activity.LoginActivity"
+            android:label="LoginActivity" >
+                <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+      
+        <activity
+            android:name="org.androidpn.client.NotificationSettingsActivity"
+            android:label="Notification Settings" >
+        </activity>
+        
+        <activity
+            android:name="org.androidpn.demoapp.activity.IndexableListViewActivity"
+            android:label="Notification Settings" >
+        </activity>
+        
+        <activity
+            android:name="org.androidpn.demoapp.activity.UserInfoActivity"
+            android:label="userINFOR" >
+        </activity>
+        
+        <activity
+            android:name="org.androidpn.demoapp.activity.ChatActivity"
+            android:label="Chat" >
+        </activity>
+        
+        <activity
+            android:name="org.androidpn.demoapp.activity.TagActivity"
+            android:label="all" >
+        </activity>
+       <activity
+            android:name="org.androidpn.demoapp.activity.SeacherActivity"
+            android:label="search" >
+        </activity>
+        
+        <activity
+            android:name="org.androidpn.demoapp.activity.AddressForSelectActivity"
+            android:label="search" >
+        </activity>
+        <provider 
+            android:name="org.androidpn.demoapp.database.ChatMsgProvider"
+            android:authorities="org.android.provider.chatmsg"
+            android:exported="false"
+            android:multiprocess="true"></provider>
+        <provider 
+            android:name="org.androidpn.demoapp.database.ChatContactsProvider"
+            android:authorities="org.android.provider.chatcontacts"
+            android:exported="false"
+            android:multiprocess="true"></provider>
+        
+        <service
+            android:name="org.androidpn.client.NotificationService"
+            android:enabled="true"
+            android:label="NotificationService" >
+            <intent-filter>
+                <action android:name="org.androidpn.client.NotificationService" />
+            </intent-filter>
+        </service>
+        
+        
+       
+        <!--
+			<meta-data android:name="ANDROIDPN_API_KEY"
+			android:value="1234567890" />
+        -->
+    </application>
+
+   
+
+
+</manifest>
