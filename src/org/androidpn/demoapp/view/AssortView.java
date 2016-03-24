@@ -1,5 +1,5 @@
 package org.androidpn.demoapp.view;
-
+//验证Fork后的项目改动，作者是否能够接到通知
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
